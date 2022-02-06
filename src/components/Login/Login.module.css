@@ -8,3 +8,44 @@
 .actions {
   text-align: center;
 }
+
+.btn {
+  display: inline-block;
+  background: white;
+  color: #444;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 30px;
+  border: thin solid #888;
+  box-shadow: 1px 1px 1px grey;
+  white-space: nowrap;
+}
+
+.btn:hover,
+.btn:active {
+  background: #0061ff;
+  border-color: #0061ff;
+}
+
+.btn:focus {
+  outline: none;
+}
+.icon {
+  background: url('./gnormal.png') transparent 5px 50% no-repeat;
+  background-size: contain !important;
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  margin: 12px;
+}
+
+.buttonText {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 42px;
+  padding-right: 42px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}

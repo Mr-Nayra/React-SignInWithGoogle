@@ -9,7 +9,8 @@ const Login = (props) => {
       <form >
         <div className={classes.actions}>
           <Button type="submit" className={classes.btn}>
-            Sign in with Google
+            <span className={classes.icon}></span>
+            <span className="buttonText">Sign in with Google</span>
           </Button>
         </div>
       </form>

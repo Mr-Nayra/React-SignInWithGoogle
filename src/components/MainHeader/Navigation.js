@@ -6,7 +6,7 @@ const Navigation = (props) => {
     <nav className={classes.nav}>
       <ul>
           <li>
-            <button >Logout</button>
+            <button onClick={props.onLogout}>Logout</button>
           </li>
       </ul>
     </nav>

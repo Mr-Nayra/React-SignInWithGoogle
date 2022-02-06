@@ -12,11 +12,12 @@ const Home = (props) => {
   const logout = () => {
     authctx.onLogout();
   };
+  const profile = JSON.parse(localStorage.getItem('profile'));
 
   return (
     <Card className={classes.home}>
-      <h1>Welcome back!</h1>
-      <Button onClick={authctx.onLogout}>Logout</Button>
+      <h1>Welcome back, {profile.name}!</h1>
+      {/* <Button onClick={authctx.onLogout}>Logout</Button> */}
       <GoogleLogout
         clientId="658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com"
         buttonText="Logout"

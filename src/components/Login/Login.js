@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import Card from "../UI/Card/Card";
 import classes from "./Login.module.css";
-import Button from "../UI/Button/Button";
 import GoogleLogin from "react-google-login";
 import AuthContext from "../../store/auth-context";
 
@@ -36,9 +35,3 @@ const Login = (props) => {
 };
 
 export default Login;
-
-// <Button type="submit" className={classes.btn}>
-//   <span className={classes.icon}></span>
-//   <span className="buttonText">Sign in with Google</span>
-// </Button>
-//

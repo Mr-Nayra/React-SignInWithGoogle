@@ -18,13 +18,3 @@
   box-shadow: 1px 1px 1px grey !important;
   white-space: nowrap;
 }
-
-.btn:hover,
-.btn:active {
-  background: #0061ff;
-  border-color: #0061ff;
-}
-
-.btn:focus {
-  outline: none;
-}

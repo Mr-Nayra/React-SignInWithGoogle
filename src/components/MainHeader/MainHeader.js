@@ -6,7 +6,8 @@ import classes from "./MainHeader.module.css";
 const MainHeader = (props) => {
   return (
     <header className={classes["main-header"]}>
-      <h1>Warmbox Login</h1>
+      {props.isLoggedIn && <h1>Warmbox</h1>}
+      {!props.isLoggedIn && <h1>Warmbox Sign-In</h1>}
       {props.isLoggedIn && <Navigation/>}
     </header>
   );

@@ -5,7 +5,7 @@ This project was made as an Assignment test for Warmbox.
 ## What can this app do?
 
 1. Sign-in with Google
-2. Displays your name and profile picture in the home page
+2. Display your name and profile picture in the home page
 3. Stores tokens in the local storage - so you can stay signed in even if you close the browser
 4. Logout option - deletes your tokens stored in the local storage
 

@@ -9,8 +9,11 @@ const Login = (props) => {
   const authctx = useContext(AuthContext);
 
   const responseGoogle = (response) => {
-    console.log(response);
-    authctx.onLogin();
+    authctx.onLogin(response);
+  };
+
+  const error = (response) => {
+    console.log("error");
   };
 
   return (
@@ -21,7 +24,7 @@ const Login = (props) => {
             clientId="1045215190312-o6aa88k1q9ulsopc22q7994che8psfvi.apps.googleusercontent.com"
             buttonText="Sign in with Google"
             onSuccess={responseGoogle}
-            onFailure={responseGoogle}
+            onFailure={error}
             className={classes.btn}
             cookiePolicy={"single_host_origin"}
             ux_mode="redirect"
